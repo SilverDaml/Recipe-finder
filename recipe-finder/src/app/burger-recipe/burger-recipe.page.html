@@ -5,9 +5,36 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">burger-recipe</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Burger</ion-card-title>
+      <div class="displayed">
+        <img src="../../assets/img/burger.jpg" alt="Burger" ><img>
+      </div>
+      <ion-card-subtitle>Best burger ever</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <p>A very healthy AND flavorful burger with a little extra crunch.</p>
+
+      <ul>
+        <li>2 pounds extra-lean ground beef</li>
+        <li>1 (1 ounce) package dry onion soup mix</li>
+        <li>1 egg, lightly beaten</li>
+        <li>2 teaspoons hot pepper sauce</li>
+        <li>2 teaspoons Worcestershire sauce</li>
+        <li>¼ teaspoon ground black pepper</li>
+        <li>¾ cup rolled oats</li>
+    </ul>
+    <h3>Steps</h3>
+    <ol>
+        <li>Preheat an outdoor grill for medium high heat and lightly oil grate.</li>
+        <li>In a large bowl, combine the beef, onion soup mix, egg, hot sauce and oats. Shape into 6 patties.</li>
+        <li>Grill patties over medium high heat for 10 to 20 minutes, or to desired doneness.</li>
+    </ol>
+      
+      <ion-button expand="block" (click)="backToMainMenu()">Main menu</ion-button> 
+    </ion-card-content>
+   
+  </ion-card>
 </ion-content>

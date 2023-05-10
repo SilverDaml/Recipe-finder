@@ -5,9 +5,43 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">pasta-recipe</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Pasta</ion-card-title>
+      <div class="displayed">
+        <img src="../../assets/img/pasta.jpg" alt="Pasta" ><img>
+      </div>
+      <ion-card-subtitle>Best burger ever</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <h3>Pasta sauce with Italian sausage</h3>
+      <p>A flavorful homemade recipe for those who are tired of sweet pasta sauces. Serve over your favorite pasta with a tossed green salad and crusty garlic bread.</p>
+      <ul>
+          <li>1 pound Italian sausage links</li>
+          <li>½ pound lean ground beef</li>
+          <li>1 tablespoon olive oil</li>
+          <li>1 onion, chopped</li>
+          <li>1 clove garlic, chopped</li>
+          <li>1 (16 ounce) can canned tomatoes</li>
+          <li>1 (15 ounce) can canned tomato sauce</li>
+          <li>1 teaspoon salt</li>
+          <li>¼ teaspoon ground black pepper</li>
+          <li>1 teaspoon dried basil</li>
+          <li>1 teaspoon dried oregano</li>
+          <li>1 bay leaf</li>
+      </ul>
+      <h3>Steps</h3>
+      <ol>
+          <li>Removed casing from sausage links and cut into 1/2 inch slices. In a large skillet, brown sausage over medium heat for about 10 minutes; remove and set aside.</li>
+          <li>In a large skillet, heat ground beef, olive oil, garlic and onion over medium heat until meat is nicely browned; drain.</li>
+          <li>Pour in tomatoes and tomato sauce; mix in salt, ground black pepper, basil, oregano, bay leaf and cooked sausage. Simmer uncovered for 1 hour, stirring occasionally.</li>
+          <li>Bring a large pot of lightly salted water to a boil. Add pasta and cook for 8 to 10 minutes or until al dente; drain.</li>
+          <li>Mix cooked sauce with hot pasta and remove bay leaf from sauce before serving.</li>
+      </ol>
+      
+      <ion-button expand="block" (click)="backToMainMenu()">Main menu</ion-button> 
+    </ion-card-content>
+   
+  </ion-card>
 </ion-content>
