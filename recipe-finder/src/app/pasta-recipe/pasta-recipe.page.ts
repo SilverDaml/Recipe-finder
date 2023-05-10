@@ -4,13 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 @Component({
-  selector: 'app-second-page',
-  templateUrl: './second-page.page.html',
-  styleUrls: ['./second-page.page.scss'],
+  selector: 'app-pasta-recipe',
+  templateUrl: './pasta-recipe.page.html',
+  styleUrls: ['./pasta-recipe.page.scss'],
   standalone: true,
   imports: [IonicModule, CommonModule, FormsModule]
 })
-export class SecondPagePage implements OnInit {
+export class PastaRecipePage implements OnInit {
 
   constructor() { }
 

@@ -10,8 +10,17 @@ export const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full',
   },
+ 
   {
-    path: 'second-page',
-    loadComponent: () => import('./second-page/second-page.page').then( m => m.SecondPagePage)
+    path: 'burger-recipe',
+    loadComponent: () => import('./burger-recipe/burger-recipe.page').then( m => m.BurgerRecipePage)
+  },
+  {
+    path: 'pizza-recipe',
+    loadComponent: () => import('./pizza-recipe/pizza-recipe.page').then( m => m.PizzaRecipePage)
+  },
+  {
+    path: 'pasta-recipe',
+    loadComponent: () => import('./pasta-recipe/pasta-recipe.page').then( m => m.PastaRecipePage)
   },
 ];

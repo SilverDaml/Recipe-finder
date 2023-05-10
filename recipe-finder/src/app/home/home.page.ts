@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -9,5 +10,23 @@ import { IonicModule } from '@ionic/angular';
   imports: [IonicModule],
 })
 export class HomePage {
-  constructor() {}
+  constructor(private router: Router) {}
+
+  //method to switch to burger recipe page
+  burgerRecipe() {
+
+    this.router.navigate(['/burger-recipe'])
+  }
+
+   //method to switch to pizza recipe page
+   pizzaRecipe() {
+
+    this.router.navigate(['/pizza-recipe'])
+  }
+
+   //method to switch to pasta recipe page
+   pastaRecipe() {
+
+    this.router.navigate(['/pasta-recipe'])
+  }
 }
