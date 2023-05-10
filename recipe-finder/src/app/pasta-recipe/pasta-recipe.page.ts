@@ -13,12 +13,12 @@ import { Router } from '@angular/router'
 })
 export class PastaRecipePage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
    //method to go back to main menu
-   backToMainMenu(private router: Router) {
+   backToMainMenu() {
 
     this.router.navigate(['/home'])
   }
