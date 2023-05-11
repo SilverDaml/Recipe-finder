@@ -76,14 +76,37 @@
   --ion-color-light-tint: #f5f6f9;
 }
 
-@media (prefers-color-scheme: dark) {
+ion-button {
+  --background: #1717dd;
+}
+
+ion-header{
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding: auto;
+  
+
+}
+
+ion-card-content, ion-card-subtitle {
+  font-size: 40x;
+  color: white;
+  padding: 20px;
+}
+
+ion-card-title{
+  font-size:xx-large;
+}
+
+@media (prefers-color-scheme: light) {
   /*
    * Dark Colors
    * -------------------------------------------
    */
 
   body {
-    --ion-color-primary: #428cff;
+    --ion-color-primary: #205cbe;
     --ion-color-primary-rgb: 66,140,255;
     --ion-color-primary-contrast: #ffffff;
     --ion-color-primary-contrast-rgb: 255,255,255;
@@ -197,13 +220,14 @@
    */
 
   .md body {
-    --ion-background-color: #121212;
+    --ion-background-color: #ffffff;
     --ion-background-color-rgb: 18,18,18;
+    
 
     --ion-text-color: #ffffff;
     --ion-text-color-rgb: 255,255,255;
 
-    --ion-border-color: #222222;
+    --ion-border-color: #312d2d;
 
     --ion-color-step-50: #1e1e1e;
     --ion-color-step-100: #2a2a2a;
